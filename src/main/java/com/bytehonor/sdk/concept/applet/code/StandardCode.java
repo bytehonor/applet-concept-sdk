@@ -1,30 +1,31 @@
 package com.bytehonor.sdk.concept.applet.code;
 
 /**
- * standard error code
- * 
+ * 标准响应码定义。
+ * <p>该类用于约束跨模块/跨服务的统一响应语义。</p>
+ *
  * @author lijianqiang
  *
  */
 public class StandardCode {
 
     /**
-     * OK
+     * 统一成功码。
      */
     public static final int OK = 0;
 
     /**
-     * SUCCESS
+     * 统一成功信息。
      */
     public static final String SUCCESS = "success";
 
     /**
-     * FRAMEWORK_ERROR
+     * 框架层异常码（如基础设施或中间件错误）。
      */
     public static final int FRAMEWORK_ERROR = 101;
 
     /**
-     * INTERNAL_ERROR
+     * 服务内部错误码（非参数问题、非鉴权问题）。
      */
     public static final int INTERNAL_ERROR = 111;
 
@@ -49,17 +50,17 @@ public class StandardCode {
     public static final int NOT_FOUND = 404;
 
     /**
-     * FEIGN_FALLBACK
+     * 远程调用降级码（上游服务不可用）。
      */
     public static final int FEIGN_FALLBACK = 499;
 
     /**
-     * UNDEFINED_ERROR
+     * 未定义错误码，用于兜底。
      */
     public static final int UNDEFINED_ERROR = 999;
 
     /**
-     * TOKEN_EXPIRED
+     * 鉴权令牌过期错误码。
      */
     public static final int TOKEN_EXPIRED = 1001;
 }

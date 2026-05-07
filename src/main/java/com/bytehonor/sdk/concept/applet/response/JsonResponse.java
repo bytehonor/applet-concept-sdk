@@ -212,7 +212,7 @@ public final class JsonResponse<T> implements Serializable {
         return result;
     }
 
-    public int getCode() {
+    public Integer getCode() {
         return code;
     }
 
